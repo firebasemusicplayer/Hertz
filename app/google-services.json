@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "290747791761",
+    "firebase_url": "https://fir-musicplayer-12a5a.firebaseio.com",
+    "project_id": "fir-musicplayer-12a5a",
+    "storage_bucket": "fir-musicplayer-12a5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290747791761:android:c70ad6582f9182e4",
+        "android_client_info": {
+          "package_name": "com.example.nikma.firebasemusicplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290747791761-g24ivfvd4mc6mro0qfaribdftqm47apr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nikma.firebasemusicplayer",
+            "certificate_hash": "d3df393b99ab0c9383892a50907d719a03ce5258"
+          }
+        },
+        {
+          "client_id": "290747791761-1235pql6kerh965vrbg6i243hgv5o5pu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ-_nl97443TRtfLKjnyZWoLuXFFAr8HY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290747791761-1235pql6kerh965vrbg6i243hgv5o5pu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
