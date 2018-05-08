@@ -11,18 +11,19 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class authentication extends AppCompatActivity {
+public class login extends AppCompatActivity {
     List<AuthUI.IdpConfig> providers;
     private static final int RC_SIGN_IN = 1 ;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_authentication);
+        setContentView(R.layout.activity_login);
         FirebaseAuth auth = FirebaseAuth.getInstance();
         if (auth.getCurrentUser() !=null)
         {
             //user already exists
+            Intent  i = new Intent(login.this,MainActivity.class);
+            startActivity(i);
         }else
         {
             providers = new ArrayList<>();
@@ -35,7 +36,6 @@ public class authentication extends AppCompatActivity {
                             .build(),
                     RC_SIGN_IN);
         }
-
     }
 
     @Override
@@ -43,11 +43,10 @@ public class authentication extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode==RC_SIGN_IN ){
             if(resultCode == RESULT_OK){
-                Intent i = new Intent(authentication.this,MainActivity.class);
+                Intent  i = new Intent(login.this,MainActivity.class);
                 startActivity(i);
-                finish();
+
             }
         }
     }
-
 }
