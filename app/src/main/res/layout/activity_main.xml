@@ -5,37 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<include
+    layout="@layout/home_header"
+    android:id="@+id/tre"/>
 
-    <com.sothree.slidinguppanel.SlidingUpPanelLayout
-        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
         android:id="@+id/sliding_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom"
         sothree:umanoPanelHeight="68dp"
         sothree:umanoShadowHeight="4dp">
+
         <include
             layout="@layout/layout_main"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
         <include
             layout="@layout/layout_secondary"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
 
 
     </com.sothree.slidinguppanel.SlidingUpPanelLayout>
-    <Button
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:id="@+id/loggingout"
-        android:text="log me out" />
+
 
 
 
