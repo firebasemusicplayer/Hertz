@@ -15,10 +15,10 @@ public class splash_activity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(splash_activity.this,login.class);
+                Intent i = new Intent(splash_activity.this, login.class);
                 startActivity(i);
                 finish();
             }
-        },SPLASH_TIME_OUT);
+        }, SPLASH_TIME_OUT);
     }
 }

@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     android:background="@drawable/download"
     tools:context=".splash_activity">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_centerInParent="true"
-        android:text="splash activity"/>
+        android:text="splash activity" />
 
 </RelativeLayout>
